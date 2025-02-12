@@ -39,6 +39,28 @@
                     <input type="text" class="form-control" id="name" name="name"
                         placeholder="Masukkan nama list">
                 </div>
+                <div class="mb-3">
+                    {{--mb-3 dibuat untuk margin bottom atau memberi jarak agar tidak berdekatan--}}
+                    <label for="description" class="form-label">Deskripsi :</label>
+                    {{--form-label digunakan untuk menyamakan ukuran input--}}
+                    {{--label adalah element yang digunakan untuk memberikan informasi tambahkan--}}
+                    <input type="text" class="form-control" id="description" name="description"
+                    {{--input type="text" digunakan untuk menampilkan form yang akan diisi--}}
+                    {{--class form control untuk menyamakan ukuran--}}
+                    {{--id description untuk tanda pengenal--}}
+                        placeholder="Apakah deskripsi kegiatan anda??🤔">
+                        {{--placeholder adalah atribut dalam input yang memberikan teks petunjuk dalam kolom input--}}
+                </div>
+                <div class="col-md-12 mb-3">
+                    <label for="priority" class="form-label">Priority :</label>
+                    <select class="form-control" name="priority" id="taskListId" name="list_id" required>
+                        {{--select adalah menu drop down yang memungkinkan pengguna memiiih satu atau beberapa opsi--}}
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                        <option value="low">Low</option>
+                        {{--option adalah element yang digunakan untuk mendefinisikan pilihan atau menu dari drop down select--}}
+                    </select>    
+                </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>

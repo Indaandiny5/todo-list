@@ -11,7 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('task_lists', function (Blueprint $table) {
+        Schema::create('task_lists', function (Blueprint $table)
+        // schema::create adalah metode yang digunakan untuk membuat table baru di database
+        // tasklist adalah nama table yang akan dibuat 
+        // blue print $table digunakan untuk mendefinisikan struktur tabel dengan mudah
+
+        {
             $table->id();
             $table->string('name')->unique();
             $table->timestamps();
@@ -25,4 +30,5 @@ return new class extends Migration
     {
         Schema::dropIfExists('task_lists');
     }
+    // Schema::dropIfExists('task_lists') → Menghapus tabel task_lists dari database jika tabel tersebut ada
 };

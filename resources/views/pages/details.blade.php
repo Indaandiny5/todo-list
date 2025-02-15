@@ -17,8 +17,8 @@
                 {{ session('success') }}
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
-        @endsession
 
+        @endsession
         {{-- div class row untuk mengatur lebar konten --}}
         <div class="row my-3">
             <div class="col-8">

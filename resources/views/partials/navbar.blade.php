@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-info navbar-dark fixed-top">
+<nav class="navbar navbar-expand-lg bg- navbar-secondary fixed-top">
     <div class="container d-flex justify-content-center">
         <a class="navbar-brand fw-bolder" href="#">{{ config('app.name') }}</a>
         {{-- navclass digunakan untuk membungkus tampilan navbar --}}
@@ -7,6 +7,6 @@
         {{-- navbar-dark digunakan untuk membuat teks navbar berwarna hitam --}}
         {{-- fixed-top digunakan untuk membuat tata letak navbar menjadi tetap/diatas --}}
         {{-- untuk memunculkan navbar|class digunakan untuk bootstrap --}}
-        {{-- href itu sebuah syntax untuk melink|config('app.name')  akan mengambil nama aplikasi dari file konfigurasi Laravel (config/app.php)  --}}
+        {{-- href itu sebuah syntax untuk kelink|config('app.name')  akan mengambil nama aplikasi dari file konfigurasi Laravel (config/app.php)  --}}
     </div>
 </nav>

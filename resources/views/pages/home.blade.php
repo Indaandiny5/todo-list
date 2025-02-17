@@ -68,8 +68,7 @@
         @endif
         <div class="d-flex flex-wrap gap-4 px-3 justify-content-center mt-4" style="height: 100vh;">
             @foreach ($lists as $list)
-                <div class="card shadow-lg border-0 rounded-lg" style="widows: 20rem; max-height: 75vh"
-                    style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
+                <div class="card shadow-lg border-0 rounded-lg task-card" style="width: 18rem; max-width: 100%;">
                     <div class="card-header bg-success text-white d-flex align-items-center justify-content-between">
                         <h5 class="card-title m-0">{{ $list->name }}</h5>
                         <form action="{{ route('lists.destroy', $list->id) }}" method="POST" style="display: inline;">
@@ -144,11 +143,10 @@
                     </div>
                 </div>
             @endforeach
-            <button type="button" class="btn btn-outline-success flex-shrink-0" style="width: 18rem; height: fit-content;"
-                data-bs-toggle="modal" data-bs-target="#addListModal">
+            <button type="button" class="btn btn-success shrink-0 custom-add-button"
+                style="width: 3rem; height: fit-content;" data-bs-toggle="modal" data-bs-target="#addListModal">
                 <span class="d-flex align-items-center justify-content-center">
                     <i class="bi bi-plus fs-5"></i>
-                    Tambah
                 </span>
             </button>
         </div>
